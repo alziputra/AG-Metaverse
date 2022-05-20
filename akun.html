@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Akun mu | AG Metaverse</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+</head>
+<body>
+   <div class="container">
+      <div class="navbar">
+         <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="" width="125px"></a>
+         </div>
+         <nav>
+            <ul>
+               <li><a href="index.html">Beranda</a></li>
+               <li><a href="produk.html">Produk</a></li>
+               <li><a href="tentang.html">Tentang</a></li>
+               <li><a href="">Akun</a></li>
+               <li><a href="keranjang.html"><i class="fab fa-opencart"></i></a></li>
+            </ul>
+         </nav>
+      </div>
+   </div> 
+   
+   <div class="account-page">
+      <div class="container">
+         <div class="row">
+            <div class="col-2">
+               <img src="img/image1.png" alt="">
+            </div>
+
+            <div class="col-2">
+               <div class="form-container">
+                  <div class="form-btn">
+                     <span onclick="login()">Login</span>
+                     <span onclick="daftar()">Daftar</span>
+                     <hr id="Indikator">
+                  </div>
+                  <form id="FormLogin">
+                     <input type="text" placeholder="Username">
+                     <input type="password" placeholder="Password">
+                     <button type="submit" class="btn">Login</button>
+                     <a href="">Lupa Password</a>
+                  </form>
+                  <form id="FormRegister">
+                     <input type="text" placeholder="Username">
+                     <input type="email" placeholder="Email">
+                     <input type="password" placeholder="Password">
+                     <button type="submit" class="btn">Daftar</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+   
+      
+
+   <div class="footer">
+      <div class="row">
+         <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="app-logo">
+               <img src="img/play-store.png" alt="">
+               <img src="img/app-store.png" alt="">
+            </div>
+         </div>
+         <div class="footer-col-2">
+            <img src="img/logo.png" alt="">
+            <p>Jadilah seperti titik koma, walaupun terlihat sepele, 
+            tapi penting akan keberadaannya.</p>
+         </div>
+         <div class="footer-col-3">
+            <h3>Tautan</h3>
+            <ul>
+               <li>Kupon</li>
+               <li>Blog Post</li>
+               <li>Kebijakan Pengembalian</li>
+               <li>Join Afiliasi</li>
+            </ul>
+         </div>
+         <div class="footer-col-4">
+            <h3>Ikuti Kami</h3>
+            <ul>
+               <li>Facebook</li>
+               <li>Tiktok</li>
+               <li>Instagram</li>
+               <li>YouTube</li>
+            </ul>
+         </div>
+      </div>
+   </div>
+
+
+   <script>
+      var FormLogin = document.getElementById("FormLogin");
+      var FormRegister = document.getElementById("FormRegister");
+      var Indikator = document.getElementById("Indikator");
+
+      function daftar(){
+         FormRegister.style.transform = "translateX(0px)";
+         FormLogin.style.transform = "translateX(0px)";
+         Indikator.style.transform = "translateX(100px)";
+      }
+
+      function login(){
+         FormRegister.style.transform = "translateX(300px)";
+         FormLogin.style.transform = "translateX(300px)";
+         Indikator.style.transform = "translateX(0px)";
+      }
+   </script>
+</body>
+</html>
